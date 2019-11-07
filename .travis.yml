@@ -1,0 +1,9 @@
+language: java
+dist: bionic
+before_install:
+- curl -o DLUnit.jar http://www.cis.gvsu.edu/~kurmasz/Software/DLUnit/dist/DLUnit.jar
+script: make && make test
+notifications:
+  email:
+    on_success: always
+    on_failure: always
