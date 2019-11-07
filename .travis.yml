@@ -1,7 +1,7 @@
 language: java
 dist: bionic
 before_install:
-- curl -o DLUnit.jar http://www.cis.gvsu.edu/~kurmasz/Software/DLUnit/dist/DLUnit.jar
+- curl -o DLUnit.jar https://www.cis.gvsu.edu/~kurmasz/Software/DLUnit/dist/DLUnit.jar
 script: make && make test
 notifications:
   email:
